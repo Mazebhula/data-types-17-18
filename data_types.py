@@ -7,7 +7,8 @@ def boolean():
     staying_alive = False
 
     # enter your code here
-
+    staying_alive = True
+    print(staying_alive)
 
 def integer():
     """
@@ -16,6 +17,10 @@ def integer():
     Create a program to accept two numbers from a user and multiply them, then print the product.
     """
     # enter your code here
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+    total = num1 * num2
+    print(f"The product is {total}")
 
 
 def string():
@@ -26,7 +31,8 @@ def string():
     """
 
     # enter your code here
-
+    name = "Evelyn"
+    print(name)
 
 def convert_to_float():
     """
@@ -36,7 +42,7 @@ def convert_to_float():
     """
     int_num = 60
     # enter your code here
-
+    print(float(int_num))
 
 def all_data_types():
     """
@@ -54,10 +60,15 @@ def all_data_types():
     float_cost = 0.00
 
     # enter your code here
-
+    print(f"{string_one}{int_year}{string_two}{str(bool_condition)}{string_3}{float_cost:.2f}")
 
 
 if __name__ == "__main__":
     """
     Run the entire program from here
     """
+    boolean()
+    integer()
+    string()
+    convert_to_float()
+    all_data_types()
